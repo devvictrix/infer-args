@@ -1,7 +1,7 @@
 {
     "name": "infer-args",
     "type": "module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Tiny, type-safe CLI argument parser for Node.js with zero dependencies and strong type inference.",
     "keywords": [
         "cli",
@@ -50,7 +50,7 @@
         "node": ">=18.0.0"
     },
     "scripts": {
-        "test": "NODE_OPTIONS='--experimental-vm-modules' jest",
+        "test": "jest",
         "build": "tsup src/index.ts --format cjs,esm --dts --clean --sourcemap",
         "format": "prettier --write .",
         "prepublishOnly": "npm test && npm run build"
